@@ -1,0 +1,42 @@
+.animatedSection {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animatedContent {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .animatedImage {
+    animation: float 3s infinite;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

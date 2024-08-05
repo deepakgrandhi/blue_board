@@ -24,14 +24,43 @@ body {
   .btn_white_text {
     @apply border-white bg-white px-8 py-3 text-gray-90;
   }
-  .btn_green {
-    @apply border-green-50 bg-green-50 px-8 py-5 text-white;
+  .btn_custom_blue {
+    background-color: #8000ff;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
   }
-  .btn_dark_green {
-    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
+
+  .btn_custom_blue:hover {
+    background-color: black;
   }
-  .btn_dark_green_outline {
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+
+  .btn_dark_custom_blue {
+    background-color: #8000ff;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn_dark_custom_blue:hover {
+    background-color: black;
+  }
+
+  .btn_dark_custom_blue_outline {
+    background-color: #8000ff;
+    color: white;
+    padding: 16px 32px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
   }
 
   .max-container {
@@ -159,10 +188,6 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .service-name {
   @apply text-rose-600 uppercase block font-semibold text-sm tracking-widest;
 }
@@ -185,7 +210,7 @@ body {
 }
 
 input::placeholder {
-  color: #e11d48;
+  color: black;
 }
 
 @keyframes playPluse {

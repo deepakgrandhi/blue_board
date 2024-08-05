@@ -1,34 +1,59 @@
 "use client";
-import { useState } from "react";
-import { NAV_LINKS } from "@/app/constants";
+import { useState, MouseEvent } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Button from "./Button";
 import { Close } from "@mui/icons-material";
+import { NAV_LINKS } from "../constants";
 
-const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+interface NavLink {
+  key: string;
+  href: string;
+  label: string;
+}
+
+const Navbar: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
   };
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const handleScroll = (
+    event: MouseEvent<HTMLAnchorElement>,
+    sectionId: string
+  ) => {
+    event.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    closeMobileMenu();
+  };
+
+  const handleReload = () => {
+    window.location.assign("/");
+  };
+
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
-      <p className="bold-18 whitespace-nowrap">Blue Board</p>
+      <p className="bold-18 whitespace-nowrap" onClick={handleReload}>
+        Quant Sync
+      </p>
 
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
           <li key={link.key}>
-            <Link href={link.href}>
-              <div className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
-                {link.label}
-              </div>
-            </Link>
+            <a
+              href={`#${link.href}`}
+              onClick={(event) => handleScroll(event, link.href)}
+              className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+            >
+              {link.label}
+            </a>
           </li>
         ))}
       </ul>
@@ -36,9 +61,9 @@ const Navbar = () => {
       <div className="lg:flexCenter hidden">
         <Button
           type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
+          title="Get in touch"
+          icon="/connect.svg"
+          variant="btn_dark_custom_blue"
         />
       </div>
 
@@ -62,14 +87,13 @@ const Navbar = () => {
               </li>
               {NAV_LINKS.map((link) => (
                 <li key={link.key}>
-                  <Link href={link.href}>
-                    <div
-                      className="block py-4 px-6 text-gray-800 hover:bg-gray-200"
-                      onClick={closeMobileMenu}
-                    >
-                      {link.label}
-                    </div>
-                  </Link>
+                  <a
+                    href={`#${link.href}`}
+                    onClick={(event) => handleScroll(event, link.href)}
+                    className="block py-4 px-6 text-gray-800 hover:bg-gray-200"
+                  >
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>

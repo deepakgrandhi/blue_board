@@ -1,14 +1,13 @@
 export const NAV_LINKS = [
-  { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "how_blueboard_works", label: "How Blue Board Works?" },
-  { href: "/", key: "services", label: "Perks" },
-  { href: "/", key: "pricing ", label: "Plans " },
-  { href: "/", key: "contact_us", label: "Contact Us" },
+  { href: "works", key: "how_blueboard_works", label: "How Quant Sync Works?" },
+  { href: "solutions", key: "services ", label: "Services" },
+  { href: "perks", key: "perks", label: "Perks" },
+  { href: "letstalk", key: "contact_us", label: "Contact Us" },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
-  links: [{ label: "Email us", value: "deepakgrandhi@gmail.com" }],
+  links: [{ label: "Email us", value: "quantsync@gmail.com" }],
 };
 
 export const SOCIALS = {
@@ -20,7 +19,7 @@ export const FOOTER_LINKS = [
   {
     title: "Know us",
     links: [
-      "About Blue Board",
+      "About Quant Sync",
       "Perks",
       "Take a tour",
       "Careers",

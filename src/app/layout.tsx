@@ -5,8 +5,8 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Blue Board",
-  description: "Ultimate design companion",
+  title: "Quant Sync",
+  description: "Connecting ideas to reality",
 };
 
 export default function RootLayout({
