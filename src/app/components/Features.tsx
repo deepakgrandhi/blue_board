@@ -27,7 +27,7 @@ const FeaturesComponent: React.FC = () => {
   return (
     <section className="container mx-auto px-8 md:px-16 md:py-10" id="features">
       <span className="service-name text-center block mb-2 text-gray-500">
-        What Sets Us Apart
+        What Sets Us Unique
       </span>
       <h2 className="title text-center text-3xl font-bold mb-8">
         Explore the Benefits Designed for You

@@ -75,15 +75,6 @@ const EfficiencyCalculator = () => {
           </p>
         </div>
       </div>
-
-      <div className="text-center mt-8">
-        <a
-          href="/demo"
-          className="bg-purple-700 text-white px-8 py-4 rounded-full font-semibold hover:bg-black transition"
-        >
-          Get in touch
-        </a>
-      </div>
     </section>
   );
 };

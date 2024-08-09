@@ -9,8 +9,8 @@ const Footer = () => {
       {" "}
       <div className="padding-container max-container flex w-full flex-col gap-10 ">
         <div className="flex flex-col items-start justify-center gap-8 md:flex-row">
-          <Link href="/" className="mb-6">
-            <Image src="/logo.png" alt="logo" width={100} height={100} />
+          <Link href="/" className="mr-12">
+            <Image src="/logo_white.png" alt="logo" width={60} height={100} />
           </Link>
 
           <div className="flex flex-wrap gap-6 sm:justify-between md:flex-1">

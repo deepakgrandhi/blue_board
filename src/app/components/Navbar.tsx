@@ -40,9 +40,16 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
-      <p className="bold-18 whitespace-nowrap" onClick={handleReload}>
-        Quant Sync
-      </p>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <Image src="/logo.png" alt="Logo" width={30} height={30} />
+        <p
+          className="bold-18"
+          onClick={handleReload}
+          style={{ margin: 10, padding: 0 }}
+        >
+          Quant Sync
+        </p>
+      </div>
 
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
