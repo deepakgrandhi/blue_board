@@ -5,7 +5,7 @@ import "chart.js/auto";
 
 const EfficiencyCalculator = () => {
   const data = {
-    labels: ["Our Cost", "Competitor A", "Competitor B"],
+    labels: ["Our MVP Build", "Typical Agency", "In-house Hire", "Big Studio"],
     datasets: [
       {
         label: "Monthly Cost (in Lakhs)",
@@ -27,9 +27,9 @@ const EfficiencyCalculator = () => {
 
   return (
     <section id="perks" className="container mx-auto px-8 py-16">
-      <h2 className="service-name text-center">Why Choose Us?</h2>
+      <h2 className="service-name text-center">Why Founders Choose Us</h2>
       <p className="title text-center">
-        Discover why our solutions are the most cost-effective options.
+        Lower burn, faster validation, and a codebase that can scale.
       </p>
 
       <div className="flex flex-col lg:flex-row gap-10 items-center">
@@ -67,11 +67,11 @@ const EfficiencyCalculator = () => {
         </div>
 
         <div className="flex-1 py-1 text-center">
-          <h3 className="text-rose-600 title">What Sets Us Unique?</h3>
+          <h3 className="text-rose-600 title">Built for speed without shortcuts</h3>
           <p className="text-lg">
-            Our solutions significantly reduces costs while enhancing
-            operational efficiency. With advanced features tailored to your
-            needs, our solutions offers unparalleled value and performance.
+            We keep scope tight and execution fast, while planning the
+            architecture for growth. That means you can validate early without
+            paying twice for a rewrite.
           </p>
         </div>
       </div>

@@ -21,25 +21,22 @@ const FounderComponent: React.FC = () => {
 
         <div className="w-full md:w-2/3 md:pl-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            A Note from Our Founder
+            Founder Experience
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Hi, I’m Deepak Grandhi, the founder of Quant Sync. From the
-            beginning, my goal has been to push the boundaries of innovation and
-            deliver solutions that not only meet but exceed our clients’
-            expectations.
+            Im Deepak Grandhi, founder of Quant Sync. I spent 6+ years
+            freelancing and shipping products for clients across industries,
+            often under tight timelines and budgets.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            At Quant Sync, we believe in blending advanced technology with a
-            deep understanding of our clients&apos; needs. This approach ensures
-            that we provide solutions that drive real, impactful results. Our
-            commitment is to continuously explore new possibilities and deliver
-            excellence in every project.
+            That experience taught me what founders need most: speed, clarity,
+            and a product that wont collapse when it grows. Thats why we
+            build MVPs fast with scalable architecture from day one.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            I’m excited about the future and the opportunities it holds. Thank
-            you for joining us on this journey, and I look forward to achieving
-            great things together.
+            If youre serious about validating your idea in the market, were
+            built to help you ship the right MVP and move quickly from feedback
+            to traction.
           </p>
         </div>
       </div>

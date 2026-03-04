@@ -28,40 +28,40 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
 const SolutionsComponent: React.FC = () => {
   const solutions = [
     {
-      title: "AI/ML Solutions",
+      title: "MVP Build",
       description:
-        "Transform data into actionable insights and applications with our AI/ML expertise.",
-      imageSrc: "/services/ai.jpg",
-    },
-    {
-      title: "Web Apps",
-      description:
-        "Custom web solutions to enhance your online presence and streamline operations.",
+        "Design and engineering to launch a usable product in weeks, not months.",
       imageSrc: "/services/webapps.jpg",
     },
     {
-      title: "Mobile Apps",
+      title: "Product Strategy",
       description:
-        "Build native and cross-platform apps for iOS and Android, including utility and enterprise solutions.",
-      imageSrc: "/services/mobileapps.jpg",
+        "Define scope, prioritize features, and set metrics that guide fast validation.",
+      imageSrc: "/services/ai.jpg",
     },
     {
-      title: "Cloud Services",
+      title: "Design + UX",
       description:
-        "Secure cloud hosting, storage, and computing services to boost efficiency and scalability.",
+        "Clear, modern interfaces that make the MVP feel trustworthy from day one.",
+      imageSrc: "/services/uiux.jpg",
+    },
+    {
+      title: "Engineering for Scale",
+      description:
+        "Clean architecture and reusable components that wont break as you grow.",
       imageSrc: "/services/cloud.jpg",
     },
     {
-      title: "Media Production",
+      title: "Launch + Iteration",
       description:
-        "Comprehensive media services including photography, videography, and editing.",
-      imageSrc: "/services/mediaprod.jpg",
+        "Ship, learn from users, and release improvements on a tight cadence.",
+      imageSrc: "/services/mobileapps.jpg",
     },
     {
-      title: "UI/UX Design",
+      title: "Infrastructure & DevOps",
       description:
-        "Create intuitive and engaging user interfaces with our tailored UI/UX design services.",
-      imageSrc: "/services/uiux.jpg",
+        "Reliable environments, monitoring, and deployments built for real usage.",
+      imageSrc: "/services/mediaprod.jpg",
     },
   ];
 
@@ -70,8 +70,8 @@ const SolutionsComponent: React.FC = () => {
       className="container mx-auto px-5 md:px-16 py-12 sm:py-20"
       id="solutions"
     >
-      <span className="service-name text-center">OUR SOLUTIONS</span>
-      <h2 className="title text-center mb-10">Explore Our Services</h2>
+      <span className="service-name text-center">WHAT WE DO</span>
+      <h2 className="title text-center mb-10">From idea to launch-ready MVP</h2>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 md:gap-5 text-center mt-10 md:mt-10">
         {solutions.map((solution, index) => (

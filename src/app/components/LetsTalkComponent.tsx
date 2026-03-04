@@ -10,11 +10,11 @@ const LetsTalkComponent = () => {
       <div className="bg-purple-600 rounded-lg text-white py-16 sm:py-24 bg-[url('/work/workbg.png')] bg-cover bg-no-repeat bg-center">
         <div className="flex flex-col items-center gap-4 sm:gap-6 w-[90%] md:w-4/5 lg:w-1/2 text-center mx-auto">
           <h2 className="text-2xl sm:text-4xl font-semibold">
-            Let&apos;s Talk
+            Ready to build your MVP?
           </h2>
           <p className="leading-loose font-[500]">
-            Our team is eager to assist you. Let&apos;s discuss how we can work
-            together to achieve your business objectives and drive success.
+            Share your idea and timeline. Well respond with a clear plan and
+            realistic launch window.
           </p>
           <div className="relative w-full">
             <input

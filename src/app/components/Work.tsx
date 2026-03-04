@@ -27,10 +27,10 @@ const WorkComponent: React.FC = () => {
       <div className="flex flex-col gap-10 lg:gap-16 container mx-auto md:px-16 px-5 py-12 sm:py-20 md:py-36">
         <div>
           <span className="uppercase block font-semibold text-sm tracking-widest text-center text-rose-200">
-            OUR PROCESS
+            OUR APPROACH
           </span>
           <h2 className="text-2xl sm:text-4xl font-semibold my-3 text-center">
-            How We Deliver Your Project
+            A focused path from idea to MVP
           </h2>
         </div>
 
@@ -38,8 +38,8 @@ const WorkComponent: React.FC = () => {
           <div className="relative">
             <WorkCard
               num="01"
-              title="Discover Needs"
-              description="We start by understanding your requirements and goals to tailor a solution that fits your needs perfectly."
+              title="Define the critical path"
+              description="We align on the core problem, success metrics, and the smallest version worth shipping."
             />
             <Image
               src={"/work/arrow.svg"}
@@ -53,8 +53,8 @@ const WorkComponent: React.FC = () => {
           <div className="relative">
             <WorkCard
               num="02"
-              title="Develop Solutions"
-              description="Discuss Design and Develop solutions that align with your strategic objectives."
+              title="Design for validation"
+              description="We prototype flows, prioritize features, and plan the fastest route to user feedback."
             />
             <Image
               src={"/work/arrow.svg"}
@@ -67,8 +67,8 @@ const WorkComponent: React.FC = () => {
           <div className="relative">
             <WorkCard
               num="03"
-              title="Integrate and Implement"
-              description="Seamlessly integrate the new solutions with your existing systems (if any) and implement them into your workflow."
+              title="Build, ship, learn"
+              description="We build the MVP with weekly demos, then iterate quickly using real user data."
             />
             <Image
               src={"/work/arrow.svg"}
@@ -81,8 +81,8 @@ const WorkComponent: React.FC = () => {
           <div className="relative">
             <WorkCard
               num="04"
-              title="Deliver and Support"
-              description="Deliver the final solution with comprehensive reports and provide ongoing support to ensure optimal performance."
+              title="Scale-ready handoff"
+              description="You get clean code, solid infrastructure, and a roadmap for the next stage of growth."
             />
           </div>
         </div>

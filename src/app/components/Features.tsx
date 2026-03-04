@@ -27,32 +27,32 @@ const FeaturesComponent: React.FC = () => {
   return (
     <section className="container mx-auto px-8 md:px-16 md:py-10" id="features">
       <span className="service-name text-center block mb-2 text-gray-500">
-        What Sets Us Unique
+        About Us
       </span>
       <h2 className="title text-center text-3xl font-bold mb-8">
-        Explore the Benefits Designed for You
+        A product studio built for speed and scale
       </h2>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
         <FeatureProduct
           imgSrc="/features/dashboard.jpg"
-          title="Instant Onboarding"
-          desc="Get started quickly with our streamlined onboarding process designed for effortless setup and rapid deployment."
+          title="MVPs in weeks"
+          desc="We focus on the critical path so you can validate fast without bloated scope."
         />
         <FeatureProduct
           imgSrc="/features/analytics.jpg"
-          title="Advanced Analytics"
-          desc="Leverage powerful analytics tools to uncover trends and patterns, and make data-driven decisions with ease."
+          title="Cost-efficient builds"
+          desc="Lean teams, smart decisions, and fast iterations keep your burn under control."
         />
         <FeatureProduct
           imgSrc="/features/uiUx.jpg"
-          title="Rich UI"
-          desc="Enhance user experience with our beautifully crafted UI designs that are intuitive, responsive, and aligned with your brand identity."
+          title="Founder collaboration"
+          desc="You stay close to the build with weekly demos, shared priorities, and rapid feedback loops."
         />
         <FeatureProduct
           imgSrc="/features/cloudIn.jpg"
-          title="Scalable Infrastructure"
-          desc="Scale your operations effortlessly with our cloud-based solutions that adapt to your growing needs and ensure high availability."
+          title="Scalable foundations"
+          desc="Modern architecture and clean code so your MVP can grow into a full product."
         />
       </div>
     </section>

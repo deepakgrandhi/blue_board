@@ -7,23 +7,22 @@ import styles from "./LandingPageComponent.module.css";
 const testimonials = [
   {
     quote:
-      "Quant Sync transformed our ideas into a seamless and engaging digital experience. Their attention to detail and creativity exceeded our expectations.",
-    author: "Alex Johnson",
-    role: "CEO of Innovate Tech",
+      "We shipped a real MVP in weeks and started onboarding beta users immediately.",
+    author: "Beta user",
+    role: "Marketplace founder",
   },
   {
     quote:
-      "Working with Quant Sync was a game-changer. They delivered on time and created a user interface that truly resonates with our brand.",
-    author: "Maria Gomez",
-    role: "Founder of DesignLab",
+      "The build was fast, but the architecture still feels clean and scalable.",
+    author: "Beta user",
+    role: "B2B SaaS founder",
   },
   {
     quote:
-      "The team at Quant Sync is incredibly talented. They took our project from concept to completion with exceptional skill and professionalism.",
-    author: "James Lee",
-    role: "CTO of TechSolutions",
+      "Tight scope, clear decisions, and a product we could test right away.",
+    author: "Beta user",
+    role: "Consumer app founder",
   },
-  // Add more testimonials as needed
 ];
 
 const LandingPageComponent = () => {
@@ -59,13 +58,16 @@ const LandingPageComponent = () => {
 
       {/* Central Section */}
       <div className="relative flex flex-col items-center text-center space-y-6 z-10">
+        <span className="text-sm md:text-base uppercase tracking-widest text-blue-600 font-semibold">
+          MVP studio for early-stage founders
+        </span>
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight drop-shadow-xl">
-          Bringing <AnimatedText text="Visions" /> to Reality
+          Build your <AnimatedText text="MVP" /> fast and ready to scale
         </h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-700 lg:max-w-lg">
-          Unleash the full potential of your brand with our custom UI designs.
-          At <b>Quant Sync</b>, we turn your ideas into visually captivating and
-          user-friendly digital experiences.
+          We turn ideas into real products in weeks. Lean scope, rapid
+          iteration, and modern architecture so you can validate with users now
+          and scale later.
         </p>
 
         <div className="flex flex-wrap items-center justify-center mt-8 space-x-4 relative">
@@ -94,25 +96,25 @@ const LandingPageComponent = () => {
           <div className="w-4 border-t border-gray-300"></div>{" "}
         </div>
 
-        <Button type="button" title="Get in touch" variant="btn_custom_blue" />
+        <Button type="button" title="Start your MVP" variant="btn_custom_blue" />
       </div>
 
       <div className="relative flex flex-col md:flex-row items-center justify-between gap-6 mt-12 z-10">
-        {/* Case Studies Card */}
+        {/* Product Proof Card */}
         <div className="w-full md:w-1/3 p-4 md:p-6 bg-transparent rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105">
           <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 text-center">
-            Case Studies
+            Product Proof
           </h3>
           <p className="text-gray-600 text-center">
-            Explore our case studies to see how we help businesses succeed. Our
-            detailed success stories highlight the impact of our solutions.
+            Two products are fully built and ready to launch. Active beta users
+            are already using them and shaping the roadmap.
           </p>
         </div>
 
         {/* Client Testimonials Card */}
         <div className="w-full md:w-1/3 p-4 md:p-6 bg-transparent rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105 relative flex flex-col items-center justify-center">
           <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 text-center">
-            Client Testimonials
+            Beta User Feedback
           </h3>
           <div className="relative w-full h-32 md:h-40 overflow-hidden flex items-center justify-center p-4">
             <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out">
@@ -135,15 +137,14 @@ const LandingPageComponent = () => {
           </div>
         </div>
 
-        {/* Our Services Card */}
+        {/* What We Deliver Card */}
         <div className="w-full md:w-1/3 p-4 md:p-6 bg-transparent rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105">
           <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 text-center">
-            Our Services
+            What We Deliver
           </h3>
           <p className="text-gray-600 text-center">
-            From innovative web apps to mobile solutions and AI-driven insights,
-            our services are designed to drive your success. Explore how we can
-            help you today.
+            Fast MVP builds, clear product decisions, and scalable codebases
+            that wont need a rewrite when you grow.
           </p>
         </div>
       </div>
